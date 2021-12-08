@@ -1,6 +1,6 @@
 import unittest
 
-from sonar_sweep.day1 import make_window, windowed_sweep
+from ..sonar_sweep.day1 import make_window, windowed_sweep
 
 class TestSweep(unittest.TestCase):
     def test_windowed_sweep(self):

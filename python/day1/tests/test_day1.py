@@ -1,6 +1,6 @@
 import unittest
 
-from sonar_sweep.day1 import make_pairs, sweep
+from ..sonar_sweep.day1 import make_pairs, sweep
 
 class TestSweep(unittest.TestCase):
     def test_sweep(self):
