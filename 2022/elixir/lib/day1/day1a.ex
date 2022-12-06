@@ -5,21 +5,21 @@ defmodule Day1 do
   1000
   2000
   3000
-  
+
   4000
-  
+
   5000
   6000
-  
+
   7000
   8000
   9000
-  
+
   10000
   """
 
-  def lines do
-    for x <- String.split(@input, "\n"), do: String.trim_trailing(x)
+  def split(body) do
+    for x <- String.split(body, "\n"), do: String.trim_trailing(x)
   end
 
   def load(bucket, [head | tail], elf_id) do
@@ -28,7 +28,7 @@ defmodule Day1 do
         load(bucket, tail, elf_id + 1)
 
       body ->
-        Bucket.collect(bucket, elf_id, body)
+        Bucket.collect(bucket, elf_id, String.to_integer(body))
         load(bucket, tail, elf_id)
     end
   end
