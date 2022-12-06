@@ -12,7 +12,5 @@ defmodule Day1.BucketTest do
     assert Day1.Bucket.get(bucket, 1) == ["1000"]
     Day1.Bucket.collect(bucket, 1, "5000")
     assert Day1.Bucket.get(bucket, 1) == ["1000", "5000"]
-
-
   end
 end
