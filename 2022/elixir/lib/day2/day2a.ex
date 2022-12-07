@@ -49,7 +49,6 @@ defmodule Day2a do
       "A" -> :rock
       "B" -> :paper
       "C" -> :scissors
-
       "X" -> :rock
       "Y" -> :paper
       "Z" -> :scissors

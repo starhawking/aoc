@@ -33,6 +33,5 @@ defmodule Day2a.ParseTest do
   test "parses correctly" do
     assert Day2a.parse_line("A X") == {:rock, :rock}
     assert Day2a.parse_line("A Y") == {:rock, :paper}
-
   end
 end
