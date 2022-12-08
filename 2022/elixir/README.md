@@ -1,21 +1,12 @@
 # AocElixir
 
-**TODO: Add description**
+Emma's 2022 Advent of Code implementations in Elixir
 
-## Installation
+# Running tests
+I generally get everything running in tests before I get the actual input, so `mix test` is all you need
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `aoc_elixir` to your list of dependencies in `mix.exs`:
+# Running each day
 
-```elixir
-def deps do
-  [
-    {:aoc_elixir, "~> 0.1.0"}
-  ]
-end
-```
+The first and second parts of each day are labeled `a` and `b` respectively. There are scripts for each part 
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/aoc_elixir>.
-
+`mix run ./day2b.exs`
