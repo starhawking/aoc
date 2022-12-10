@@ -1,0 +1,6 @@
+stream = AOC.day(4)
+    |> Stream.map(&(Day4a.parse(&1)))
+    |> Stream.map(fn {l, r} -> Day4a.overlaps?(l, r) end)
+    |> Stream.reject(&(not &1))
+final_count = length(Enum.to_list(stream))
+IO.puts("Final Count: #{final_count}")
