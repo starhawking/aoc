@@ -1,0 +1,6 @@
+chunks = AOC.day(3)
+  |> Stream.chunk_every(3)
+  |> Stream.map(fn x -> Day3b.commoner(x) end)
+  |> Stream.map(fn x -> Day3a.item_priority(x) end)
+total = Enum.sum(chunks)
+IO.puts("Total #{total}")
